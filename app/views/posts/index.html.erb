@@ -5,6 +5,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
+      <th>Icon</th>
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:description) %></th>
@@ -15,6 +16,7 @@
   <tbody>
     <% @posts.each do |post| %>
       <tr>
+        <td><i class="icon-signal"></i></td>
         <td><%= link_to post.id, post_path(post) %></td>
         <td><%= post.title %></td>
         <td><%= post.description %></td>
