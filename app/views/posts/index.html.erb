@@ -34,7 +34,20 @@
     <% end %>
   </tbody>
 </table>
+        <a class="btn btn-small btn-info" href="#" style="display:inline-block; float:left;"><i class="icon-info-sign icon-white"></i> More Info</a>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="#" style="display:inline-block; float:left;"><i class="icon-user icon-white"></i> User</a>
+          <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#" style="display:inline-block; float:left;"><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" style="display:inline-block; float:left;"><i class="icon-pencil"></i> Edit</a></li>
+            <li><a href="#" style="display:inline-block; float:left;"><i class="icon-trash"></i> Delete</a></li>
+            <li><a href="#" style="display:inline-block; float:left;"><i class="icon-ban-circle"></i> Ban</a></li>
+            <li class="divider" style="display:inline-block; float:left;"></li>
+            <li><a href="#" style="display:inline-block; float:left;"><i class="i"></i> Make admin</a></li>
+          </ul>
+        </div>
+ 
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_post_path,
-            :class => 'btn btn-primary' %>
+            :class => 'btn btn-primary', :style => 'display:inline-block; float:left;'%>  
